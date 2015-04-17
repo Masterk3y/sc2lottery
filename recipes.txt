@@ -1,0 +1,94 @@
+MERGE LIST
+TERRAN BIO
+2 Marine: Warmonger 
+2 Ghost: Sniper
+3 Marauder: 2 Hammer
+Sniper, Hammer: Spectre
+Warmonger, Hammer: Death Head
+Death Head, Spectre: Jim Raynor
+Jim Raynor, Kerrigan: Stukov
+2 Stukov, Hybrid Reaver: Nova
+HIDDEN
+Warmonger, 2 Marauder: Tauren Marine
+2 Tauren Marine, Black Immortal: Tauren Toilet
+2 Spectre, 3 Hammer: Tosh
+2 Stukov, 3 Jim Raynor: Tychus
+8 Infested Terran, 2 Death Head: Stetmann: 2 Stukov for 8 Infested
+Nova, 6 Jim Raynor: Commander Raynor
+5 Turret, 2 Dominion Marauder: Swann: 1 Raven for 5 Turret
+8 Infested Terran, 4 Hammer: Dominion Marauder: 2 Stukov for 8 Infested/ Hammer (SSS+)
+Stukov, 4 Spectre: Warfield: Stukov (X+)
+Nova, K5 Kerrigan: Sarah Kerrigan: Nova+K5 Kreeigan (X+, 60% Up), Shoot Nova+K5 Kerrigan with Drill & move any unit to station
+TERRAN MECH
+2 Goliath: Spartan
+2 Vulture: Diamondback
+3 Siege Tank: 2 Siege Breaker
+Spartan, Siege Breaker: Blackhammer
+Diamondback, Siege Breaker: ARES
+Blackhammer, ARES: Arch Angel
+2 Arch Angel: ODIN
+2 ODIN, Stukov: Hyperion
+HIDDEN
+6 Blackhammer: ODIN: Only 5 get used 
+12 Spidermine: Widowmine: 4 Vulture for 12 Spidermine
+2 Spartan, Siege Tank: Warhound: Siege Tank in siege mode
+2 ARES, 3 Siege Breaker: Drakken Laser Drill
+4 Diamondback, 4 Hammer: Garbage
+2 Warhound, 2 Widowmine, Arch Angel: Raven
+Garbage, Tauren Toilet: NUKE
+Hyperion, 3 Stukov: Gorgon BC
+4 Arch Angel: Arch Fighter: Arch Angel (SSS+)/ need TURN OFF Merge Station
+Hyperion, 2 Arch Fighter: Pirate Ship: Hyperion (90% Up)
+ODIN, 4 Blackhammer: Detector
+ZERG
+2 Roach: Primal Roach
+2 Lurker: Primal Lurker
+3 Hydra: 2 Primal Hydra
+Primal Roach, Primal Hydra: Ravasaur
+Primal Lurker, Primal Hydra: Brutalisk
+Ravasaur, Brutalisk: Kerrigan
+Kerrigan, Zeratul: Hybrid Reaver
+2 Hybrid Reaver, Hybrid Dominator: Leviathan
+HIDDEN
+Primal Lurker, 2 Hydra: Swarm Host
+4 Locusts, 4 Primal Hydra: Viper: 1 Swarm Host for 4 Locusts
+2 Primal Hydra, Primal Roach: 4 Drone: Primal Hydra+Primal Roach(burrowed)/ move any unit to station
+2 Swarm Host, 1 Ravasaur: Queen: Swarm Host+Ravasaur (burrowed)/ move any unit to station
+3 Primal Roach, 2 Dark Stalker: Vile Roach: Primal Roach (burrowed)
+Leviathan, Hybrid Reaver, 2 Kerrigan: K5 Kerrigan
+2 Hybrid Reaver, 3 Kerrigan: Omegalisk
+12 Mini Sunken Colony: Spore Cannon: Mini Sunken Colony (S+)
+Hybrid Reaver, 4 Brutalisk: Kraith: Hybrid Reaver (X+)/ Brutalisk (S+)
+Omegalisk, 2 Vile Roach: TORRASQUE: Omegalisk (X+, Lvl 11)/ Vile Roach (burrowed, SSS+)
+PROTOSS
+2  Stalker: Dark Stalker
+2 High Templar: Karas
+3 Archon: 2 Immortal
+4 Immortal: Dark Immortal
+Dark Stalker, Immortal: Stone Zealot
+Karas, Immortal: Tassadar
+Stone Zealot, Tassadar: Zeratul
+Zeratul, Jim Raynor: Hybrid Dominator
+2 Hybrid Dominator, ODIN: Void Seeker
+HIDDEN
+Karas, Dark Stalker, 2 Archon: Sentry
+Hybrid Dominator, 4 Stone Zealot: Colossus
+2 Tassadar, 3 Immortal: Tempest
+Sentry, 2 High Templar: Warp Prism: TURN OFF Merge, morph High Templar, TURN ON, move Sentry to Merge
+Hybrid Dominator, Warp Prism: Void Ray
+2 Hybrid Dominator, 3 Zeratul: Mothership
+2 Colossus: Dark Pylon: Colossus (X+)
+Void Seeker, 2 Void Ray: Mohander: Void Seeker (90% Up)
+Mothership, Void Seeker: Selendis: Mothership+Void Seeker (X+, 60% Up)/ cast Sentry's Guardian Shield
+NEUTRAL
+Dog (M), Dog (F): Crab (M)
+Dog (M), Dog (F): Crab (F)
+Crab (M), Crab(F): Karak (M)
+Crab (M), Crab(F): Karak (F)
+Karak (M), Karak (F): Ursadak (M)
+Karak (M), Karak (F): Ursadak (F)
+Ursadak (M), Ursadak (F): Yeti (M)
+Ursadak (M), Ursadak (F): Yeti (F)
+2 Yeti (M): Blue Deer
+2 Yeti (F): Green Deer
+Yeti (M), Yeti (F): Giant Flower
