@@ -10,5 +10,9 @@ namespace sc2lottery
     {
         public String Name { get; set; }
 
+        public override string ToString()
+        {
+            return Name.ToString();
+        }
     }
 }

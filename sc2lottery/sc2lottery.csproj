@@ -54,8 +54,11 @@
   <ItemGroup>
     <Compile Include="Control.cs" />
     <Compile Include="Crafter.cs" />
-    <Compile Include="CraftJob.cs" />
+    <Compile Include="CraftJobs.cs" />
     <Compile Include="ICrafter.cs" />
+    <Compile Include="Interface.xaml.cs">
+      <DependentUpon>Interface.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Item.cs" />
     <Compile Include="QuickDictionary.cs" />
     <Compile Include="Maker.cs" />
@@ -87,6 +90,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Interface.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

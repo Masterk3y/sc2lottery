@@ -84,14 +84,17 @@ namespace sc2lottery
             {
                 ss = Console.ReadLine();
 
+
+
                 int c = 0;
                 if (String.IsNullOrWhiteSpace(ss))
                 {
 
                 }
-                else if (items.ContainsKey(ss))
+                else if (items.Keys.Where((s) => s.ToUpper() == ss.ToUpper()).FirstOrDefault() != null)
                 {
-                    crafter.Craft(items[ss], 1);
+                    var x = items[items.Keys.Where((s) => s.ToUpper() == ss.ToUpper()).First()];
+                    crafter.Craft(x, 1);
                 }
                 else if (int.TryParse(ss.Substring(0, 2), out c))
                 {

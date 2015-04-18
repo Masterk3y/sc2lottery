@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,37 +12,56 @@ namespace sc2lottery
 
         QuickDictionary<Item> currentItems;
         public List<Recipe> Recipes { get; set; }
-        QuickDictionary<Recipe> craftJobs;
+        CraftJobs<Recipe> craftJobs;
+        int priority;
 
         public Maker()
         {
             currentItems = new QuickDictionary<Item>();
-            craftJobs = new QuickDictionary<Recipe>();
+            craftJobs = new CraftJobs<Recipe>();
+        }
+
+        public void Craft(Item i)
+        {
+            Craft(i, 1);
         }
 
         public void Craft(Item i, int amount)
         {
-            Console.WriteLine(i.Name);
+            priority = 0;
             CollectCraftJobs(i, amount);
-            foreach (var item in craftJobs)
+
+            var x = craftJobs.OrderBy((pair) => pair.Value[1]).Reverse().ToList();
+            int max = x.First().Value[1];
+            Console.WriteLine(max);
+            foreach (var item in x)
             {
-                Console.WriteLine(item.Value + "x: " + item.Key.ToString());
+                for (int j = 0; j < max - item.Value[1]; j++)
+                {
+                    Console.Write(" ");
+                }
+                Console.WriteLine(item.Value[0] + "x: " + item.Key.ToString());
             }
-
-
+            if (currentItems.Count > 0)
+                Console.WriteLine("Units Left: " + currentItems.ToString());
+            craftJobs.Clear();
         }
 
         private void CollectCraftJobs(Item i, int amount)
         {
+
+
             var r = FindRecipe(i);
             if (r == null)
             {
+                priority--;
                 return;
             }
 
             if (currentItems[i] >= amount)
             {
                 currentItems[i] -= amount;
+                priority--;
                 return;
             }
 
@@ -52,17 +72,20 @@ namespace sc2lottery
             }
             if (craftJobs.Contains(r))
             {
-                craftJobs[r] += times;
+                craftJobs[r, 0] += times;
+                // priority--;
             }
             else
-                craftJobs.Add(r, times);
+            {
+                craftJobs.Add(r, times, priority);
+            }
 
             foreach (var input in r.Input)
             {
+                priority++;
                 CollectCraftJobs(input.Key, input.Value * amount);
             }
-
-
+            priority--;
         }
 
         public Recipe FindRecipe(Item i) { return Recipes.Where((r) => r.Output.ContainsKey(i)).FirstOrDefault(); }
