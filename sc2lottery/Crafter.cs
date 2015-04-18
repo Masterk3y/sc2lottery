@@ -6,18 +6,25 @@ using System.Threading.Tasks;
 
 namespace sc2lottery
 {
-    class Crafter
+    class Crafter 
     {
 
         public List<Recipe> Recipes { get; set; }
         Dictionary<Item, int> itemPool;
         Dictionary<Item, int> cheapest;
 
+        QuickDictionary<Item> id;
+
         public Crafter()
         {
+            id = new QuickDictionary<Item>();
+
             itemPool = new Dictionary<Item, int>();
             cheapest = new Dictionary<Item, int>();
             Recipes = new List<Recipe>();
+
+            
+
         }
 
         public void Craft(List<Item> items)
@@ -45,6 +52,7 @@ namespace sc2lottery
             {
                 Make(i);
             }
+            cheapest.Clear();
         }
 
         public void Make(List<Item> ii)
@@ -99,7 +107,9 @@ namespace sc2lottery
                         Craft(ing);
                     }
                 }
-                itemPool.Remove(ing);
+
+                if (itemPool[ing] <= 0)
+                    itemPool.Remove(ing);
             }
 
             foreach (var item in r.Output.Keys)

@@ -19,6 +19,8 @@ namespace sc2lottery
             items = new Dictionary<String, Item>();
 
             ReadRecipes();
+
+            Maker m = new Maker() { Recipes = recipes };
             Loop();
 
 
@@ -74,7 +76,7 @@ namespace sc2lottery
 
         public static void Loop()
         {
-            Crafter crafter = new Crafter() { Recipes = recipes };
+            Maker crafter = new Maker() { Recipes = recipes };
 
 
             String ss = "";
@@ -89,11 +91,11 @@ namespace sc2lottery
                 }
                 else if (items.ContainsKey(ss))
                 {
-                    crafter.Make(items[ss]);
+                    crafter.Craft(items[ss], 1);
                 }
                 else if (int.TryParse(ss.Substring(0, 2), out c))
                 {
-                    crafter.Make(items[ss.Substring(2)], c);
+                    crafter.Craft(items[ss.Substring(2)], c);
                 }
                 else if (ss == "list")
                 {
@@ -101,9 +103,7 @@ namespace sc2lottery
                     {
                         r.Print();
                     }
-
                 }
-
 
             } while (ss != "exit");
 

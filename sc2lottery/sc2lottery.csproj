@@ -54,7 +54,11 @@
   <ItemGroup>
     <Compile Include="Control.cs" />
     <Compile Include="Crafter.cs" />
+    <Compile Include="CraftJob.cs" />
+    <Compile Include="ICrafter.cs" />
     <Compile Include="Item.cs" />
+    <Compile Include="QuickDictionary.cs" />
+    <Compile Include="Maker.cs" />
     <Compile Include="Recipe.cs" />
   </ItemGroup>
   <ItemGroup>

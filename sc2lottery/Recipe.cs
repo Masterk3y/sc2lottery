@@ -25,26 +25,33 @@ namespace sc2lottery
 
         public void Print()
         {
+            Console.WriteLine(ToString());
+        }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
             for (int i = 0; i < Input.Count; i++)
             {
-                Console.Write(Input.ElementAt(i).Value + " " + Input.ElementAt(i).Key.Name);
+                sb.Append(Input.ElementAt(i).Value + " " + Input.ElementAt(i).Key.Name);
                 if (i < Input.Count - 1)
                 {
-                    Console.Write(" + ");
+                    sb.Append(" + ");
                 }
             }
-            Console.Write(" --> ");
+            sb.Append(" --> ");
             for (int i = 0; i < Output.Count; i++)
             {
-                Console.Write(Output.ElementAt(i).Value + " " + Output.ElementAt(i).Key.Name);
+                sb.Append(Output.ElementAt(i).Value + " " + Output.ElementAt(i).Key.Name);
                 if (i < Output.Count - 1)
                 {
-                    Console.Write(" + ");
+                    sb.Append(" + ");
                 }
             }
             if (Notes != String.Empty)
-                Console.Write(" (" + Notes + ")");
-            Console.WriteLine();
+                sb.Append(" (" + Notes + ")");
+
+            return sb.ToString();
         }
 
         /*
